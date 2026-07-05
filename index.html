@@ -31,10 +31,10 @@
   .brandrow img.logo{ height:66px; }
   .brandrow .event{ text-align:right; font-size:15px; color:var(--muted); letter-spacing:2px; text-transform:uppercase; line-height:1.4;}
   .brandrow .event b{ color:var(--ue); font-weight:800; display:block; font-size:18px;}
-  h1.title{ margin-top:22px; font-size:52px; line-height:1.04; font-weight:800; color:var(--ink); max-width:1000px;}
+  h1.title{ margin:22px auto 0; font-size:52px; line-height:1.04; font-weight:800; color:var(--ink); max-width:1050px; text-align:center;}
   h1.title .u{ color:var(--ue); }
-  .sub{ margin-top:12px; font-size:19px; color:var(--muted); }
-  .authors{ margin-top:14px; font-size:17px; color:var(--ink);}
+  .sub{ margin-top:12px; font-size:19px; color:var(--muted); text-align:center; }
+  .authors{ margin-top:14px; font-size:17px; color:var(--ink); text-align:center;}
   .authors b{ color:var(--ue); }
 
   /* franja título de sección */
@@ -191,20 +191,20 @@
         <span class="badge"><span class="n">5</span>FASE 5</span>
         <h3>Programación y pruebas</h3>
         <ul>
-          <li>Lógica en Arduino, validada en Wokwi.</li>
-          <li>Diagnóstico por Monitor Serie.</li>
-          <li>OK: marcha atrás, intermitentes, distancia.</li>
-          <li>OK: parada a 20 cm y bloqueo en marcha.</li>
+          <li>Lógica en Arduino, validada en simulación (Wokwi).</li>
+          <li>Diagnóstico en tiempo real por Monitor Serie.</li>
+          <li>Marcha atrás, intermitentes y medición de distancia comprobados.</li>
+          <li>Parada automática a 20 cm y bloqueo de cambio en marcha.</li>
         </ul>
       </div>
       <div class="fase f6">
         <span class="badge"><span class="n">6</span>FASE 6</span>
         <h3>Recopilación de datos, resultados y valoraciones</h3>
         <ul>
-          <li>Maqueta funcional: avanza, gira, señaliza y frena.</li>
-          <li>Integración lograda de mecánica y control.</li>
-          <li>Incidencias resueltas (Arduino, IR→ultrasonidos).</li>
-          <li>Aprendizaje práctico de ingeniería reforzado.</li>
+          <li>Maqueta funcional que cumple los objetivos: avanza, retrocede, gira, señaliza y frena.</li>
+          <li>Integración lograda entre el diseño mecánico y la automatización.</li>
+          <li>Los retos afrontados —la fijación del motor, el trabajo con varias placas Arduino y el ajuste entre el tamaño de las ruedas y el chasis— se resolvieron con acierto y enriquecieron el aprendizaje.</li>
+          <li>Valoración muy positiva: un proyecto que une con éxito la teoría y la práctica de la ingeniería.</li>
         </ul>
       </div>
     </div>
@@ -215,7 +215,7 @@
       <div class="spec"><div class="big">3</div><div class="lbl">marchas (2 avance + 1 atrás)</div></div>
       <div class="spec"><div class="big">0,1–0,5<b> m/s</b></div><div class="lbl">rango de velocidad</div></div>
       <div class="spec"><div class="big">200<b> rpm</b></div><div class="lbl">motor a 12 V · ruedas Ø65 mm</div></div>
-      <div class="spec"><div class="big">1</div><div class="lbl">GDL dirección (Grübler)</div></div>
+      <div class="spec"><div class="big">1</div><div class="lbl">grado de libertad en la dirección: el giro queda controlado por una única entrada, verificado con el criterio de Grübler</div></div>
       <div class="spec"><div class="big">45<b> mm</b></div><div class="lbl">distancia entre ejes (constante)</div></div>
       <div class="spec"><div class="big">20<b> cm</b></div><div class="lbl">frenado automático ante obstáculo</div></div>
       <div class="spec"><div class="big">42×26<b> cm</b></div><div class="lbl">dimensiones del chasis</div></div>
